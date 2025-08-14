@@ -1,0 +1,22 @@
+.checkout-bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100%;
+    width:100%;
+}
+.btn-return{
+    background-color: orange;
+    height: 50px;
+    width:auto;
+    border-radius: 10px;
+    border:none;
+    padding:10px;
+    color:white;
+    font-weight: bold;
+}
+.Image-dawn{
+    height:200px;
+} 

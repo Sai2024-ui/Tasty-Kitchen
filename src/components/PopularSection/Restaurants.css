@@ -1,0 +1,121 @@
+.restaurants-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* .title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+} */
+.paragraph{
+    color:gray;
+}
+.restaurants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.Up{
+  background-color: green;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.restaurant-name {
+  font-size: 18px;
+  margin: 8px 0 4px 0;
+}
+
+.restaurant-cuisine {
+  font-size: 14px;
+  color: #666;
+}
+
+.restaurant-rating {
+  font-size: 14px;
+  color: #ff9800;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.count-display{
+    font-weight: bold;
+    margin-top: 3px;
+    background-color: none;
+    padding:10px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 12px;
+  border-radius: 16px;
+  /* box-shadow: 0 2px 12px rgba(0,0,0,0.08); */
+  margin-left: auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+}
+
+.sort-label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.sort-dropdown {
+  padding: 8px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-dropdown:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 0 2px #ffe0b2;
+  background: #fff;
+}

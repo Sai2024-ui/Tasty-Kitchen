@@ -1,0 +1,82 @@
+/* RestaurantDetails.css */
+
+.Main {
+  padding: 20px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  margin-top: 40px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  cursor: pointer;
+}
+
+/* .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+} */
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* border-right: 1px solid #eee; */
+  margin-left: 20px;
+}
+
+.Text {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.Text h3 {
+  font-size: 1.25em;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+.Text p {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0;
+}
+
+.Text p:last-of-type {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #f5c518;
+}
+.Add{
+  width:120px;
+  background-color: green;
+  color:white;
+  border:none;
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.Cart{
+  display: none;
+}
