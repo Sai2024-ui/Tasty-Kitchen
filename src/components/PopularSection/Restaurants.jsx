@@ -110,7 +110,7 @@ export default function PopularRestaurants() {
         <button onClick={handlePrev} disabled={offset === 0}>
           -
         </button>
-        <span className="count-display">{count}</span>
+          <span className="count-display">{count}</span>
         <button className="Up" onClick={handleNext} disabled={count === 3}>
           +
         </button>

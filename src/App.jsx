@@ -6,8 +6,16 @@ import RestaurantDetails from './components/RestaurantDetails/RestaurantDetails'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Cart from './components/Cart/Cart'
 import Payment from './components/Payment/Payment'
+import { useEffect } from 'react'
 
 const App = () => {
+  
+  useEffect(()=>{
+    localStorage.removeItem('cart');
+    document.title="Tasty Kitchens"
+    
+  },[])
+
   return (
     <div>
       <BrowserRouter>
