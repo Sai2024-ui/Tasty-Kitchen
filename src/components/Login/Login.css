@@ -104,3 +104,11 @@ input {
   height: 16px;
   cursor: pointer;
 }
+@media (max-width:720px){
+  .login-container{
+    height: 100%;
+  }
+  .background{
+    display: none;
+  }
+}
