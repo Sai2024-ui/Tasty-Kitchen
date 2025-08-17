@@ -43,16 +43,19 @@ const Cart = () => {
         <Navbar />
       </div>
       <div>
-        {/* <h2>Your Cart</h2> */}
         {items.length === 0 ? (
           <div className='empty-cart'>
             <img src="/images/image copy.png" />
             <h3>Your Cart is Empty</h3>
+            <button className='cart-back' onClick={() => navigate(-1)}>Back</button>
           </div>
         ) : (
           <>
           <div className="cart-container">
-            <h2>Your Cart</h2>
+            <div className='cart-title'>
+                <h2>Your Cart</h2>
+                <button className='cart-back' onClick={() => navigate(-1)}>Back</button>
+            </div>
             {items.map((item) => (
               <div key={item.id} className="cart-item">
                 <img src={item.image_url} alt={item.name} className="cart-img" />
@@ -60,9 +63,9 @@ const Cart = () => {
                   <h4>{item.name}</h4>
                   <p>₹ {item.cost}</p>
                   <div className="qty-controls">
-                    <button onClick={() => decrementQty(item.id)}>-</button>
+                    <button onClick={() => decrementQty(item.id)} >-</button>
                     <span>{item.quantity}</span>
-                    <button onClick={() => incrementQty(item.id)}>+</button>
+                    <button onClick={() => incrementQty(item.id)} >+</button>
                   </div>
                 </div>
                 <p className="item-total">₹ {item.cost * item.quantity}</p>

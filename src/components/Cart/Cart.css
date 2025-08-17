@@ -51,8 +51,19 @@
   display: flex;
   align-items: center;
   margin-top: 8px;
+  /* gap:10px; */
 }
-
+.cart-back{
+  background-color: lightblue;
+  width:100px;
+  height:35px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.cart-title{
+  display: flex;
+  justify-content: space-between;
+}
 .qty-controls button {
   width: 30px;
   height: 30px;
@@ -111,4 +122,3 @@
   font-size: 16px;
   margin-top: 40px;
 }
-

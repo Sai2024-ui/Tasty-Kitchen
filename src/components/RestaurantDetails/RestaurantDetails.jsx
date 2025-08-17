@@ -85,10 +85,12 @@ const RestaurantDetails = () => {
                   <p>⭐ {each.rating}</p>
                   {inCart ? (
                     <div>
-                      <button onClick={() => incrementQty(each.id)}>+</button>
-                      <span className="quantity">{inCart.quantity}</span>
-                      <button onClick={() => decrementQty(each.id)}>-</button>
-                      <p>Item Added</p>
+                      <div className='quantity-controls'>
+                        <button onClick={() => incrementQty(each.id)} className='button'>+</button>
+                        <span className="quantity">{inCart.quantity}</span>
+                        <button onClick={() => decrementQty(each.id)} className='button'>-</button>
+                      </div>
+                      <p className='button-up'>*Item Added</p>
                     </div>
                   ) : (
                     <button className="Add" onClick={() => addToCart(each)}>
